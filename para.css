@@ -1,0 +1,215 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f3e9e9;
+} 
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-size: large;
+}
+.logo-container img {
+    width: 40px;
+    margin-right: 10px;
+}
+.right-header button {
+    background-color: rgb(221, 79, 44);
+    color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.right-header button :hover {
+    background-color: red;
+}
+.sub-header {
+    display:flex ;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    align-items: center;
+}
+.Para-tv a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: red;
+}
+.advert-container {
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+.ad-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.ad-slide:first-child {opacity: 1;}
+@media (max-width:768px) {
+    .navbar ul {flex-wrap: wrap;}
+    .sub-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .advert-container {
+        width: 100%;
+        height: auto;
+    }
+}
+.navbar {
+    background-color: rgb(202, 228, 228);
+    padding:10px ;
+    text-align: center;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+}
+.container {
+    width:40% ;
+    margin: 10px auto;
+}
+.featured {
+text-align: center;
+margin-bottom: 20px;
+}
+.featured img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 140px;
+}
+.news-card {
+    background-color: rgba(100, 143, 180, 0.199);
+    scroll-padding-right: 190px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center ;
+    width: 200%;
+    
+}
+.news-card img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+}
+.news-card p {
+    color: black;
+    font-size: small;
+    width: 100%;
+}
+.tag {
+    display: flex;
+    background: red;
+    color: #f0f0f0;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.tag lifestyle {background: blue;}
+.tag politics {background: green;}
+.footer-news {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: #f5f5f5;
+}
+.news-item {
+    width: 300px;
+    text-align: center;
+}
+.news-item img {width: 100%;
+height: 150px;
+object-fit: cover;
+border-radius: 5px;
+}
+.news-item p {
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: #333;
+}
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    background-color:#007BFF ;
+    color: white;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+.footer-logo {
+    flex: 1;
+    text-align: center;
+}
+.footer-logo img {
+    width: 50px;
+    margin-bottom: 10px;
+    border-radius:30px ;
+}
+.footer-links {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #769da8;
+}
+.footer-links ul {
+    list-style: none;
+}
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+.footer-links ul li a :hover {
+    color: white;
+}
+@media (max-width:768px) {
+    .footer-news {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-main {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

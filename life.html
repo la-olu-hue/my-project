@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>para news</title>
+    <link rel="icon" href="assets/butterfly-.webp " type="icon">
+    <link rel="stylesheet" href="life.css">
+</head>
+<body>
+  <header>
+<h1>para news</h1>
+<p>explore the wellness,beauty and more</p>
+<nav class="navbar"><ul>
+  <li><a href="index.html">Home</a></li>
+</ul>
+</nav>
+  </header>
+  <div class="container">
+    <div class="section">
+        <h2>healthy living</h2>
+        <img src="assets/vegetables.jpg" alt="">
+        <p>eating fresh fruits and vegetables <br>
+           helps you stay fit energetic everyday!
+        </p>
+    </div>
+    <div class="section">
+      <h2>Travel and Adventure</h2>
+      <img src="assets/trevel.jpg" alt="">
+      <p>discover beautiful places around the world <br>
+         and enrich your experience with adventure</p>
+    </div>
+    <div class="section">
+      <h2>home decoration</h2>
+      <img src="assets/home-.jpg" alt="">
+      <p>make your home cozy and styling with simple and colorful ideas</p>
+    </div>
+    <div class="advert">
+      <h2>sponsorship</h2>
+      <img id="adImages" src="assets/kate.yuel.jpg" alt="advertisement">
+<p> check out the latest lifestyle offers!</p>
+    </div>
+    <div class="advert">
+      <h2>sponsorship</h2>
+      <img id="adImages" src="assets/basketball.jpg" alt="advertisement">
+      <p>miami Heat</p>
+    </div>
+  </div>
+</body>
+<script>
+  const adImage = document.getElementById('adImage');
+const adImages =["assets/kate.yuel.jpg",
+"assets/basketball.jpg"];
+let currentAd =0;
+
+setInterval(() => {
+  adImage.style.opacity = 0;
+setTimeout (() => {
+currentAd  = (currentAd + 1) %
+adImages.length;
+   adImage.src = 
+   adImages[currentAd];
+   adImage.style.opacity = 1;
+}, 500);
+}, 3000);
+</script>  
+</html>
